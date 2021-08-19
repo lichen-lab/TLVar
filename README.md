@@ -80,13 +80,19 @@ optional arguments:
 
 ## Example
 
+
+### Obtain flanking DNA sequence using chromosome coordinates
+```
+Rscript --vanilla snptoseq.R HGMD HGMD 500 hg19
+```
+
 ### Pre-train model using large-scale generic functional noncoding variants
 ```
 python main.py \
     --pretrain \
     --jobname hgmd \
-    --seq_files  data/HGMD.fasta \
-    --snp_files  data/HGMD.bed \
+    --seq_files  HGMD.fasta \
+    --snp_files  HGMD.bed \
     --frac_pretrain 1  \
     --frac_val 0.2  \
     --batch_size 128  \
@@ -104,7 +110,7 @@ python main.py \
     --comparison\
     --jobname CAGI_train \
     --pretrain_model hgmd1.0.seq.h5  \
-    --data_file data/CAGI_train.h5 \
+    --data_file CAGI_train.h5 \
     --frac_trains 0.1 1  \
     --frac_test 0.2  \
     --frac_val 0.2  \
