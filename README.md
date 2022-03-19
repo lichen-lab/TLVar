@@ -4,6 +4,9 @@ Exploiting deep transfer learning for the prediction of functional noncoding var
 ## Introduction
 We will propose a deep transfer learning model, which is based on deep convolutional neural network, to improve the prediction for functional noncoding variants from a specific context. To overcome the challenge of few validated functional noncoding variants, the transfer learning model consists of pretrained layers trained by large-scale generic functional noncoding variants, and retrained layers by context-specific functional noncoding variants with the pretrained layers frozen.
 
+## Maintainer
+
+Li Chen (chen61@iu.edu)
 
 ## Requirements and Installation
 
